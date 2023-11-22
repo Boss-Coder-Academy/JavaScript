@@ -815,7 +815,7 @@ Each of these methods has its strengths and use cases. Async/Await, in particula
 
 
 
-+ **Task 2**: On clicking the like button, turn it into white entirely, if clicked odd number of times.
++ **Task 2**: On clicking the like button, the like button must change if clicked odd number of times.
 
 
 **Desired Output**:
