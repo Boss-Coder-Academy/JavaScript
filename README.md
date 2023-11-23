@@ -23,7 +23,7 @@ Variables are containers for storing data values. JavaScript has several data ty
 
 Here are examples demonstrating variable declaration and different data types:
 
-```bash
+```javascript
 // Numbers
 let numberExample = 42;
 let floatExample = 3.14;
@@ -53,7 +53,7 @@ JavaScript supports various operators for performing operations on variables and
 2. **Comparison Operators**: Equal to (==), not equal to (!=), greater than (>), less than (<), etc.
 3. **Logical Operators**: AND (&&), OR (||), NOT (!), etc.
 
-```bash
+```javascript
 // Arithmetic Operators
 let sum = 5 + 10;
 let product = 3 * 7;
@@ -78,7 +78,7 @@ Control flow statements allow you to control the execution flow in your code.
 3. **for loop**: Executes a block of code a specified number of times.
 4. **while loop**: Executes a block of code while a specified condition is true.
 
-```bash
+```javascript
 // If Statements
 let num = 10;
 if (num > 0) {
@@ -109,7 +109,7 @@ Functions in JavaScript are blocks of reusable code designed to perform a partic
 
 1. Function Declaration:
 
-```bash
+```javascript
 // Function declaration
 function greet(name) {
     return 'Hello, ' + name + '!';
@@ -126,7 +126,7 @@ console.log(greeting); // Output: Hello, Alice!
 
 4. **Arrow Functions (Introduced in ES6)**:
 
-```bash
+```javascript
 // Arrow function
 const square = (num) => {
     return num * num;
@@ -142,7 +142,7 @@ Arrays are used to store multiple values in a single variable. They can hold var
 
 Array Declaration and Manipulation:
 
-```bash
+```javascript
 // Array declaration
 let fruits = ['Apple', 'Banana', 'Orange'];
 
@@ -164,7 +164,7 @@ Objects are containers for named values, called properties and methods. They gro
 
 1. **Object Declaration and Usage**:
 
-```bash
+```javascript
 // Object declaration
 let person = {
     name: 'John',
@@ -187,7 +187,7 @@ person.greet(); // Output: Hello!
 
 Adding and Modifying Object Properties:
 
-```bash
+```javascript
 // Adding new property
 person.location = 'New York';
 
@@ -217,7 +217,7 @@ Code Examples:
 **Accessing HTML elements**:
 
 
-```bash
+```javascript
 <!DOCTYPE html>
 <html>
 <head>
@@ -239,7 +239,7 @@ elementById.innerHTML = 'Hello, Updated!'; // Modifying element content
 
 **Modifying HTML/CSS through JavaScript**:
 
-```bash
+```javascript
 <!DOCTYPE html>
 <html>
 <head>
@@ -270,7 +270,7 @@ function modifyText() {
 
 **Event handling**:
 
-```bash
+```javascript
 <!DOCTYPE html>
 <html>
 <head>
@@ -307,7 +307,7 @@ Arrow functions provide a concise way to write function expressions in JavaScrip
 
 Example using Arrow Functions:
 
-```bash
+```javascript
 // Regular function expression
 function add(a, b) {
   return a + b;
@@ -327,7 +327,7 @@ Template literals are a way to create strings in JavaScript, allowing embedded e
 
 Example using Template Literals:
 
-```bash
+```javascript
 const name = 'Alice';
 const greeting = `Hello, ${name}!
 Welcome to our website.`;
@@ -343,7 +343,7 @@ Destructuring is a feature that allows unpacking values from arrays or propertie
 
 Example using Destructuring:
 
-```bash
+```javascript
 // Array destructuring
 const numbers = [1, 2, 3];
 const [first, second, third] = numbers;
@@ -368,7 +368,7 @@ Spread and rest operators provide three dots (...) to manipulate arrays and func
 
 Example using Spread/Rest Operators:
 
-```bash
+```javascript
 // Spread operator (arrays)
 const arr1 = [1, 2, 3];
 const arr2 = [4, 5, 6];
@@ -393,7 +393,7 @@ try...catch blocks in JavaScript are used to handle exceptions (errors) that may
 
 Example using Try...Catch Blocks:
 
-```bash
+```javascript
 try {
   // Code that may throw an error
   const result = someUndefinedVariable + 10;
@@ -412,7 +412,7 @@ When working with Promises, errors can be handled using the .catch() method to h
 
 Example handling errors with Promises:
 
-```bash
+```javascript
 function fetchData() {
   return new Promise((resolve, reject) => {
     // Simulating an asynchronous operation that fails after a delay
@@ -445,7 +445,7 @@ Local Storage is a part of the Web Storage API that allows storing key-value pai
 
 Example using Local Storage:
 
-```bash
+```javascript
 // Storing data in local storage
 localStorage.setItem('username', 'Alice');
 
@@ -465,7 +465,7 @@ The Fetch API provides an interface for making HTTP requests, enabling fetching 
 
 Example using Fetch API:
 
-```bash
+```javascript
 // Fetching data from an API
 fetch('https://api.example.com/data')
   .then(response => {
@@ -493,7 +493,7 @@ Cookies are small pieces of data stored in the user's browser. They can be set, 
 
 Example working with Cookies:
 
-```bash
+```javascript
 // Setting a cookie
 document.cookie = 'username=Alice; expires=Fri, 31 Dec 2023 23:59:59 GMT; path=/';
 
@@ -519,7 +519,7 @@ Modules in JavaScript allow code to be organized into separate files, with expor
 Example using Module Import/Export:
 File 1 (module1.js):
 
-```bash
+```javascript
 // module1.js
 export const greeting = 'Hello';
 
@@ -531,7 +531,7 @@ export function sayHello(name) {
 
 File 2 (module2.js):
 
-```bash
+```javascript
 // module2.js
 import { greeting, sayHello } from './module1.js';
 
@@ -547,7 +547,7 @@ Scope in JavaScript refers to the accessibility of variables, where they are dec
 
 Example demonstrating Scope:
 
-```bash
+```javascript
 // Global scope variable
 let globalVar = 'I am global';
 
@@ -574,7 +574,7 @@ Higher-order functions are functions that either take one or more functions as a
 
 Example of Higher-Order Function:
 
-```bash
+```javascript
 // Higher-order function taking another function as an argument
 function operate(func, num) {
   return func(num);
@@ -596,7 +596,7 @@ map, filter, and reduce are higher-order functions built into JavaScript that al
 
 Example using Map, Filter, and Reduce:
 
-```bash
+```javascript
 // Map: Modifying each element in an array
 const numbers = [1, 2, 3, 4, 5];
 const squared = numbers.map(num => num ** 2);
@@ -623,7 +623,7 @@ Asynchronous JavaScript is a crucial part of web development, especially when de
 
 + **Callbacks**: They were one of the initial ways to manage asynchronous code in JavaScript. A callback is a function passed as an argument to another function, and it gets executed after the completion of a particular task. However, callback-based code can lead to "callback hell" when dealing with multiple nested asynchronous operations, making code hard to read and maintain.
 
-```bash
+```javascript
 function fetchData(callback) {
   setTimeout(() => {
     const data = 'Callback Data';
@@ -641,7 +641,7 @@ fetchData(processData);
 
 + **Promises**: Promises were introduced to mitigate the issues with callbacks. A Promise is an object representing the eventual completion or failure of an asynchronous operation and its resulting value. It has methods like .then() to handle success and .catch() to handle errors. Promises offer better readability and are easier to manage than callbacks.
 
-```bash
+```javascript
 function fetchData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -663,7 +663,7 @@ fetchData()
 
 + **Async/Await**: Async/Await is a more recent addition to JavaScript that provides a syntactic sugar on top of promises, making asynchronous code look more synchronous and easier to understand. The async keyword is used to declare an asynchronous function, and the await keyword is used within that function to pause execution and wait for a promise to resolve before continuing. Async/Await makes asynchronous code more readable and maintainable, especially when dealing with multiple asynchronous operations.
 
-```bash
+```javascript
 function fetchData() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -704,7 +704,7 @@ Each of these methods has its strengths and use cases. Async/Await, in particula
 
 **Code**:
 
-```bash
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 
