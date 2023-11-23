@@ -828,7 +828,7 @@ Each of these methods has its strengths and use cases. Async/Await, in particula
 
 **Code**: 
 
-```bash
+```javascript
 <!DOCTYPE html>
 <html lang="en">
 
