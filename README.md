@@ -1,6 +1,5 @@
 # JavaScript
 
-## Javascript
 
 ### 1. Introduction
 
