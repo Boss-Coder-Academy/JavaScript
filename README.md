@@ -1,4 +1,4 @@
-# Assignment: JavaScript
+# JavaScript
 
 ## Javascript
 
