@@ -6,6 +6,60 @@
 
 JavaScript is a scripting language commonly used for web development. It's a versatile tool allowing for dynamic content creation, user interaction, and manipulation of web page elements. Initially executed on the client side within web browsers, it has expanded to server-side environments through platforms like Node.js. JavaScript's key features include its event-driven nature, asynchronous capabilities, and support for various frameworks and libraries, empowering developers to build robust and responsive web applications.
 
+**Keywords in JS**:
+
++ ### var
+`var` was the original way to declare variables in JavaScript before ES6. Variables declared with `var` have function-level scope or global scope if declared outside a function. They can be redeclared and updated within their scope.
+
+Example:
+```javascript
+function varExample() {
+    if (true) {
+        var x = 10;
+        console.log(x); // Output: 10
+    }
+    console.log(x); // Output: 10 - accessible due to function-level scope
+}
+varExample();
+
+console.log(x); // Throws ReferenceError: x is not defined - not accessible outside the function
+```
+
++ ### let
+`let` was introduced in ES6 and allows block-scoped variables. Variables declared with `let` can be reassigned but not redeclared within the same scope.
+
+Example:
+```javascript
+function letExample() {
+    if (true) {
+        let y = 20;
+        console.log(y); // Output: 20
+    }
+    // console.log(y); // Throws ReferenceError: y is not defined - y is not accessible here due to block scope
+}
+letExample();
+
+// Example of reassignment
+let z = 30;
+z = 40;
+console.log(z); // Output: 40 - reassignment of let is allowed
+```
+
++ ### const
+`const` is used to declare constants. Variables declared with `const` cannot be reassigned to a new value after the initial assignment. However, for complex types like arrays or objects, the properties or elements within these types can still be changed.
+
+Example:
+```javascript
+const PI = 3.14159;
+// PI = 3.14; // Throws TypeError: Assignment to constant variable - reassignment of const is not allowed
+
+const obj = { key: 'value' };
+obj.key = 'new value';
+console.log(obj); // Output: { key: 'new value' } - modifying object properties is allowed
+```
+
+Using `var`, `let`, or `const` depends on your specific needs for variable scoping and mutability. `const` is preferred when the variable should not be reassigned, `let` is used when reassignment is needed, and `var` is generally avoided due to its less predictable scoping behavior.
+
 
 ### 2. Basics of JavaScript 
 
