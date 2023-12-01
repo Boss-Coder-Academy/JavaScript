@@ -1,5 +1,43 @@
 # JavaScript
 
+### Agenda
+
+1. **Introduction**
+2. **Basics of Javascript**:
+      + Variables and Data Types
+      + Operators
+      + Control Flow (if statements, loops)
+      + Functions
+      + Arrays
+      + Objects
+3. **Accessing HTML elements**
+4. **ES6 + Features**:
+      + Arrow Functions
+      + Template Literals
+      + Destructuring
+      + Spread/Rest Operators
+5. **Error Handling**:
+      + Try...Catch Blocks
+      + Handling Errors with Promises
+6. **Working with Browsers**:
+      + Local Storage
+      + Fetch API (HTTP Requests)
+      + Working with Cookies
+7. **Module and Scopes**:
+      + Module Import/Export
+      + Scope (Global vs. Local)
+8. **Functional Programming**:
+      + Higher-Order Functions
+      + Map, Filter, and Reduce
+9. **Asynchronous JavaScript**:
+      + Local Storage
+      + Callbacks
+      + Async/Await
+10. **Assignment**
+
+    
+---
+
 
 ### 1. Introduction
 
