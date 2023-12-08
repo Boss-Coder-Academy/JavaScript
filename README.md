@@ -784,6 +784,10 @@ Each of these methods has its strengths and use cases. Async/Await, in particula
 
 ### 10. Assignment: 
 
+For the following assignments use the given Figma link:
+
+[Figma Link for assignments](https://shorturl.at/clP68)
+
 
 + **Task 1**: Hover on the like button, and display a mini dialog box indicating ‘I like this”
 
